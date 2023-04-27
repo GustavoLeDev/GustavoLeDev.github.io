@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guide touristque a kribi</title>
+</head>
+<body>
+    <!--Sectin acceuil-->
+
+    <section id="container">
+        <header>
+            <div class="logo">
+                <p>visiter Kribi?</p>
+            </div>
+            <!--Menu responsive-->
+            <div class="menu-toggle"></div>
+            <ul class="menu">
+                <li><a href="#container">Acceuil</a></li>
+                <li><a href="#a-propos">A propos</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <div class="container-text">
+            <h1> Decouvrer Kribi la belle !!!</h1>
+            <marquee behavior="alternate">
+                <p>Visiter Kribi c'est bien, mais visiter les meilleurs lieux de kribi c'est se faire
+                    plaisir, alors faites-vous guider !!!
+                </p>
+             </marquee>
+            <a href="#">Reserver un guide touristque</a>
+        </div>
+    </section>
+
+    <!--Section a propos-->
+
+    <section id="a-propos">
+        <div>
+            <p class="title-section">A propos</p>
+            <h1 class="sub-title-section">Qui sommes nous?</h1>
+            <div class="description-photo">
+                <div class="desc">
+                    <p>Nous sommes une equipe de jeunes dynamiques, professionnels, disponibles
+                        à votre service pour vous guider lors de votre sejour, de votre visite 
+                        dans la ville de Kribi. Nous nous mettons a votre disposition dans le but 
+                        de vous faire decouvrir les meilleurs lieux de la cité balnéaire tout 
+                        en vous garantissant paisiblement le confort, la sécurité, la joie, tout
+                        en vous proposant uniquement les meilleurs prix. 
+                    </p>
+                    <h2>Nos services</h2>
+                    <div class="list-services">
+                        <div class="service">
+                            <img src="images/hotel-solid.svg" alt="hotel">
+                            <p>Hebergement</p>
+                        </div>
+                        <div class="service">
+                            <img src="images/restaurant.png" alt="resto">
+                            <p>Restauration</p>
+                        </div>
+                        <div class="service">
+                            <img src="images/balade.png" alt="balade">
+                            <p>Ballade</p>
+                        </div>
+                        <div class="service">
+                            <img src="images/decouverte.png" alt="Decouverte">
+                            <p>Decouverte</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="im">
+                        <img src="images/largon3.jpg" alt="largon hotel">
+                    </div>
+                    <div class="im">
+                        <img src="images/gb4.jpg" alt="Les plages de grand batanga">
+                    </div>
+                    <div class="im">
+                        <img src="images/chute5.jpg" alt="chute">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--Section de gallerie destination-->
+    <section class="gallerie" id="destination">
+        <p class="title-section">Destination</p>
+        <h1 class="sub-title-section">Les lieux de vos reves</h1>
+        <div class="list-photo">
+            <div class="gallerie-img">
+                <img src="images/pygmee.jpg" alt="">
+                <div class="show-destination"><p>CAMPS PYGMEE</p></div>
+            </div>
+            <div class="gallerie-img">
+                <img src="images/gb1.jpg" alt="">
+                <div class="show-destination"><p>GRAND BATANGA</p></div>
+            </div>
+            <div class="gallerie-img">
+                <img src="images/largon1.jpg" alt="">
+                <div class="show-destination"><p>HOTEL LARGON</p></div>
+            </div>
+            <div class="gallerie-img">
+                <img src="images/chute8.jpg" alt="">
+                <div class="show-destination"><p>CHUTE DE LA LOBE</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section contact-->
+
+    <section id="contact">
+        <p class="title-section">contact</p>
+        <h1 class="sub-title-section">Formulaire de contact</h1>
+        <div>
+            <form action="">
+                <label>Adress Mail</label>
+                <input type="email" placeholder="Ex: nom@gmail.com">
+                <label>Message</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <input type="submit" value="ENVOYER">
+            </form>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.facebook.com/gustave.ekona"><img src="images/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/youtube.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/tel.png" alt=""></a></li>
+                    <li><a aria-label="Chat on WhatsApp" href="https://wa.me/+237655418272"> <img alt="Chat on WhatsApp" src="images/whatsapp.png" /> </a></a></li>
+                </ul>
+            </div>
+            <div class="image-contact">
+                <img src="images/image-contact.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <div id="scroll_to_top">
+        <a href="#top"><img src="images/topPage.jpg" alt="Retourner en haut" /></a>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <p>Copyright by GustavoLeDev</p>
+    </footer>
+
+    <script>
+        var menu_toggle = document.querySelector('header .menu-toggle');
+        var menu = document.querySelector('header .menu')
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+    </script>
+</body>
+</html>
